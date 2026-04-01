@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Alain Spang pour "table ronde optique astro-fr/discord mars 2026"
+# barbidule! pour "table ronde optique astro-fr/discord mars 2026"
 # exemple de script de calcul de dOTF à partir de deux series d'images brutes
 
 import numpy as np
