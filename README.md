@@ -1,5 +1,5 @@
 # dotf-simple-example
-compute dOTF from two set of psf frames, one of them with a small pupil amplitude modification 
+this script computes dOTF from two sets of psf frames, one of them being captured with a small pupil amplitude modification. 
 
 The Python script accompanies a presentation of the differential optical transfer function used as a focal plane wavefront sensor (see: Codona, J. L. (2013). Differential optical transfer function wavefront sensing. Optical Engineering, 52(9), 097105-097105).
 
@@ -17,13 +17,13 @@ To average the effects of air turbulence and increase the signal-to-noise ratio,
 
 The full width at half maximum (FWHM) of the star in the images must be at least two pixels, the maximum must be less than the camera's saturation value and the minimum above 0 (no clipping).
 
-Roughly, the script compute the optical transfer fuction of the point spread function of the two images sets, substract the first to the second and extracts a phase signal close to that of the wavefront at the output of the optical instrument to be tested, then writes the later to an intermediate file with the extension .wft. This script can be loaded by an application allowing for more detailed analysis of the results (https://github.com/githubdoe/DFTFringe).
+Roughly, the script compute the optical transfer function of the point spread function of the two images sets, subtract the first to the second and extracts a phase signal close to that of the wavefront at the output of the optical instrument to be tested, then writes the later to an intermediate file with the extension .wft. This script can be loaded by an application allowing for more detailed analysis of the results (https://github.com/githubdoe/DFTFringe).
 
 The script, being only a showcase, is adapted to the datasets shown during the presentation and will require adjustments for other data.
 
 Possible uses:
 
-- In the workshop, checking slightly deformed mirrors (aspgerical or not) at the center of curvature.
+- In the workshop, checking slightly deformed mirrors (aspherical or not) at the center of curvature.
 
 - In the workshop, checking an instrument in autocollimation on a reference flat mirror, potentially evaluating chromatic aberration.
 
